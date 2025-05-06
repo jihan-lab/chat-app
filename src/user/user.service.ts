@@ -6,9 +6,8 @@ export class UserService {
   constructor(private prisma: PrismaService) {}
 
   async getAllMessages() {
-    return this.prisma.message.findMany({
-      include: { sender: true },
-      orderBy: { createdAt: 'asc' },
+    return this.prisma.user.findMany({
+      orderBy: { id: 'asc' },
     });
   }
 
