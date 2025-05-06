@@ -14,7 +14,7 @@ import { ChatModule } from './chat/chat.module';
       host: 'localhost',
       port: 5432,
       username: 'postgres',
-      password: '',
+      password: 'admin',
       database: 'chat_app',
       entities: [__dirname + '/**/*.entity{.ts,.js}'],
       synchronize: true, // jangan true di production
