@@ -5,7 +5,7 @@ import { PrismaService } from 'src/prisma.service';
 export class MessageService {
   constructor(private prisma: PrismaService) {}
 
-  create(content: string, userId: number) {
+  create(content: string, userId: string) {
     return this.prisma.message.create({
       data: {
         content,

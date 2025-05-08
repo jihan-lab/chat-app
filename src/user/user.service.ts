@@ -11,7 +11,7 @@ export class UserService {
     });
   }
 
-  async sendMessage(content: string, senderId: number) {
+  async sendMessage(content: string, senderId: string) {
     return this.prisma.message.create({
       data: {
         content,

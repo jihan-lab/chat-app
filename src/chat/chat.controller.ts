@@ -11,7 +11,7 @@ export class ChatController {
   }
 
   @Post()
-  sendMessage(@Body() body: { content: string; senderId: number }) {
+  sendMessage(@Body() body: { content: string; senderId: string }) {
     return this.chatService.sendMessage(body.content, body.senderId);
   }
 }

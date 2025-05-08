@@ -8,6 +8,8 @@ const main = async () => {
     update: {},
     create: {
       username: 'alice',
+      email: 'alice@gmail.com',
+      password: '1234',
     },
   });
 
@@ -16,6 +18,8 @@ const main = async () => {
     update: {},
     create: {
       username: 'bob',
+      email: 'bob@gmail.com',
+      password: '1234',
     },
   });
 
